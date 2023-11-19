@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #aaa0a0;;
+    font-family: sans-serif;
+    height: 100vh;
+    color: #36369b;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 70px;
+    margin-bottom: 120px;
+    padding: 30px;
+}
+
+.login-btn{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    height: 40px;
+    width: 100px;
+    background: #000;
+    border-radius: 5px;
+}
+
+.login-btn2{
+    color: #fff;
+    height: 40px;
+    width: 350px;
+    background: rgb(238, 140, 157);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.form-tag{
+    margin: 5px 2px 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #fff;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #dfd6d6;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.4);
+}
+
+.input{
+    height: 40px;
+    width: 350px;
+    border: 1px solid #855252;
+    background: #d1d1da;
+    padding: 0 8px;
+    border-radius: 10px;
+    outline: 0;
+}
+
+h4{
+    margin: 10px 0 2px 5px;
+    cursor: default;
+}
+
+.terms{
+    margin-top: 15px;
+}
+
+.agreement{
+    display: flex;
+    justify-content: flex-start;
+    margin: 15px;
+}
+
+.checkbox{
+    margin-right: 5px; 
+}
+
+.redirect, a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.redirect{
+    position: absolute;
+    left: 42%;
+    bottom: 20%;
+}

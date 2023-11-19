@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'signin.css' %}" />
+    <title>social book sign In</title>
+  </head>
+  <body>
+    <div class="nav2">
+      <h2>Login Page</h2>
+
+      <a href="/signup" class="login-btn">Register</a>
+    </div>
+
+    <div class="container">
+
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div>
+              <style>
+                h5{
+                  color: red;
+                }
+              </style>
+        
+              {% for message in messages %}
+              <h5>{{message}}</h5>
+              {% endfor %}
+          </div>
+
+            <h2 class="form-tag">Log in!</h2>
+
+            <h4>Username</h4>
+            <input class="input" type="text" placeholder="username" name="username" />
+            
+            <h4>Password</h4>
+            <input class="input" type="password" placeholder="password" name="password" id="pswd" />
+
+            <!-- <div class="agreement">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox1" checked />
+                    <label for="checkbox">I Agree to the</label>
+                </div>
+
+                <a href="#">Terms and Conditions</a>
+            </div> -->
+
+            <button type="submit" class="login-btn2">Login</button>
+        </form>
+
+    </div>
+
+    <p class="redirect">Not registered? <a href="/signup">Create an account</a></p>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #aaa0a0;
+    font-family: sans-serif;
+    height: 100vh;
+    color: #1818ca;
+    position: relative;
+}
+
+.profile-nav{
+    display: flex;
+    position: absolute;
+    top: 250px;
+    right: 4%;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.stats{
+    margin: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.home{
+    margin-right: 450px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.background-image img{
+    height: 300px;
+    width: 100vw;
+}
+
+.Unfollow-btn{
+    height: 40px;
+    width: 90px;
+    background-color: #ffc0cb;
+    border: 2px solid #faf7f7;
+    border-radius: 8px;
+}
+
+.about{
+    margin: 100px 0 0 50px;
+}
+
+.profile-picture{
+    position: absolute;
+    top: 15px;
+    display: flex;
+}
+
+.profile-picture h3{
+    margin-top: 300px
+}
+
+.profile-picture img{
+    height: 300px;
+    width: 220px;
+    margin: 50px;
+    border-radius: 10px;
+    border: 3px solid #faf7f7
+}
+
+.picture-feed-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picture-feeds{
+    border-radius: 10px;
+    background: #fff;
+    height: 550px;
+    width: 660px;
+    margin: 50px;
+    padding: 10px;
+    
+}
+
+.picture-feeds img{
+    height: 250px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 10px;
+}

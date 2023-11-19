@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'signup.css' %}" />
+    <title>social book sign up</title>
+  </head>
+  <body>
+    <div class="nav2">
+      <h2>SignUp to Social Book</h2>
+
+      <a class="login-btn" href="/signin">Login</a> 
+    </div>
+
+    <div class="container">
+
+        <form action="" method="POST">
+            {% csrf_token %}
+
+            <div>
+              <style>
+                h5{
+                  color: red;
+                }
+              </style>
+        
+              {% for message in messages %}
+              <h5>{{message}}</h5>
+              {% endfor %}
+          </div>
+
+            <h2 class="form-tag">Sign up!</h2>
+
+            <h4>Username</h4>
+            <input class="input" type="text" placeholder="username" name="username" />
+            <h4>Email</h4>
+            <input class="input" type="email" placeholder="email" name="email" id="" />
+            <h4>Password</h4>
+            <input class="input" type="password" placeholder="password" name="password" id="pswd" />
+            <h4>Comfirm Password</h4>
+            <input class="input" type="password" placeholder="comfirm password" name="password2" id="pswd2" />
+
+            <!-- <div class="agreement">
+
+                <div class="checkbox">
+                    <input type="checkbox" id="checkbox1" checked />
+                    <label for="checkbox">I Agree to the</label>
+                </div>
+
+                <a href="#">Terms and Conditions</a>
+            </div> -->
+
+            <button type="submit" class="login-btn2">Sign Up</button>
+        </form>
+
+    </div>
+
+    <h5 class="redirect">Do You have an account? <a href="/signin">Login</a></h5>
+  </body>
+</html>

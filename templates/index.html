@@ -1,0 +1,129 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css' %}"  >
+    <link rel="shortcut icon" href=" {% static 'favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' %}"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <!---- Navigatin Bar ---->
+        <nav class="navbar">
+            <div class="search">
+                <i class="fa fa-search icon" ></i>
+                <input class="search-box" type="text" placeholder="Search for username...">
+            </div>
+            
+            <!-- remeber to remove this link below! -->
+            <a class="signup-btn" href="signup">Goto signup</a>
+
+            <ul>
+                <li class="upload">
+                    <button class="upload-btn">Upload Pics/Videos</button>
+                    <div class="upload-dropdown">
+                        <div class="upload-icon"><i class="fa fa-cloud-upload"></i></div>
+                        <p>Upload pics</p>
+                        <textarea name="" id="text" cols="20" rows="8" placeholder="Write something..."></textarea>
+                    </div>
+                </li>
+                <li><a class="icons" href="#"><i class="fa fa-bell" ></i></a></li>
+                <li><a class="icons" href="#"><i class="fa fa-comment" ></i></a></li>
+                <li class="menu-bar">
+                    <a href="#"><img src="{% static 'img1.jpg' %}" alt=""></a>
+                    <div class="menu-bar2">
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Account Settings</a></li>
+                            <li><a href="#">Explore</a></li>
+                            <li><a href="#">Help</a></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <!---- Section 1 ---->
+
+        <div class="container2">
+
+            <div class="posts">
+                <div class="post-title">
+                    <div>
+                        <img src="{% static 'img1.jpg' %} " alt="">
+                        <span class="bold">@Miracle</span>
+                    </div>
+                    <h3>&#8230</h3>
+                </div>
+
+                <div class="post-photo">
+                    <img src="{% static 'img4.jpg' %}" alt="">
+                </div>
+
+                <div class="post-footer">
+                    <div>
+                        <li><a href="#"><i class="fa fa-thumbs-up" ></i></a></li>
+                        <li><a href="#"><i class="fa fa-download" ></i></a></li>
+                    </div>
+                    <span class="bold">@Miracle</span> <span>Nature...</span>
+                </div>
+                
+            </div>
+
+
+            <ul class="follows">
+                <li class="box">
+                    <h3>Users you can follow</h3>
+                    <h4>Refresh</h4>
+                </li>
+                <li class="box"><img src="{% static 'img1.jpg' %}" alt="">
+                    <div class="name">
+                        <h4>Vince</h4>
+                       <p>53k followers</p>
+                    </div>
+                    <a class="follow" href="#">follow</a>
+                </li>
+                <li class="box"><img src="{% static 'img2.jpg' %}" alt="">
+                    <div class="name">
+                        <h4>Okechukwu</h4>
+                        <p>30k followers</p>
+                    </div>
+                    <a class="follow" href="#">follow</a>
+                </li>
+                <li class="box"><img src="{% static 'img6.jpg' %}" alt="">
+                    <div class="name">
+                        <h4>Mirabel</h4>
+                        <p>33k followers</p>
+                    </div>
+                    <a class="follow" href="#">follow</a>
+                </li>
+                <li class="box"><img src="{% static 'img4.jpg' %}" alt="">
+                    <div class="name">
+                        <h4>Lucy</h4>
+                        <p>20m followers</p>
+                    </div>
+                    <a class="follow" href="#">follow</a>
+                </li>
+                <li class="box"><img src="{% static 'img5.jpg' %}" alt="">
+                    <div class="name">
+                        <h4>Tom</h4>
+                        <p>5k followers</p>
+                    </div>
+                    <a class="follow" href="#">follow</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

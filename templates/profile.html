@@ -1,0 +1,54 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'profile.css' %} ">
+    <title>Profile Page</title>
+</head>
+
+<body>
+
+    <div class="comtainer">
+
+        <div class="background-image">
+            <img src="{% static 'img3.jpg' %}" alt="">
+        </div> 
+
+        <div class="profile-picture">
+            <img src="{% static 'img7.jpg' %}" alt="">
+
+            <h3>@john</h3>
+        </div>
+
+        <h4 class="about">I am john, and i am the coolest kid</h4>
+
+        <div class="profile-nav">
+
+            <a class="home" href="#">Home</a>
+
+            <div class="profile-stats">
+                <a class="stats" href="#">2 posts</a>
+                <a class="stats" href="#">1 follower</a>
+                <a class="stats" href="#">1 following</a>
+                <button class="Unfollow-btn" href="#">Unfollow</button>   
+            </div>
+
+        </div>
+
+        <div class="picture-feed-container">
+
+            <div class="picture-feeds">
+                <img src="{% static 'img5.jpg' %}" alt="">
+                <img src="{% static 'img4.jpg' %}" alt="">
+                <img src="{% static 'img2.jpg' %}" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
